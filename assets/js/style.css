@@ -1,0 +1,30 @@
+body{
+    margin-top:10%;
+    margin: 0 auto;
+    width:45%;
+    align-content: center;
+}
+nav
+{
+	align-content: center;
+
+}
+nav a{
+	padding-right: 10px;
+	
+	
+
+}
+nav a:onhover{
+	background:grey;
+}
+
+form
+{
+    margin-top:10%;
+    border-radius: 20px;
+    height:75%;
+    background:black;
+    padding-top: 2%;
+}
+

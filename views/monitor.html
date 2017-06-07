@@ -1,0 +1,43 @@
+  <nav id="navbar" class="navbar navbar-inverse">
+    <a href="#/student" ng-click="stud()">Add Student</a>
+        <a href="#/monitor" ng-click="monitorstud()">Monitor Student</a>
+
+         <a href="#/logout" ng-click="logout()">Logout</a> <br /> <br /></nav>
+         <div >
+<form id="form1" class="col-md-12 bg-danger" ng-controller="mycontrol">
+<div class="form-group ">
+               
+            	<label>Select Class</label>
+				<select style="color:black" name="batch" ng-model="batch" ng-change="monitor()">
+				    <option style="color:black" value="javascript">JavaScript</option>
+				    <option  style="color:black" value="java">Java</option>
+				  </select>
+<br>
+			
+			<label>Select Student</label>
+				<select style="color:black" name="batchs" ng-model="batchs" ng-change="studselect()"  >
+   					<option style="color:black" ng-repeat="option in studentoption" value="{{option.stname}}">{{option.stname}}</option>
+				   
+				</select>
+			
+</div>
+<table class="table table-striped table-responsive"  >
+	<tr>
+		<th>Name</th>
+		<th>Subject 1</th>
+		<th>Subject 2</th>
+		<th>Subject 3</th>
+		<th>Average</th>
+	</tr>
+	<tr>
+		<td>{{indstudent.stname}}</td>
+		<td>{{indstudent.stsub1}}</td>
+		<td>{{indstudent.stsub2}}</td>
+		<td>{{indstudent.stsub3}}</td>
+		<td>{{indstudent.avg}}</td>
+
+	</tr>
+</table>
+</form>
+
+</div>

@@ -1,0 +1,24 @@
+<html>
+   
+<body >
+<form id="form1" class="col-md-12 bg-primary" ng-controller="mycontrol">
+       
+        <h3>Login Form</h3><br>
+        
+            <div class="form-group" >
+               
+            <label>Username</label>
+            <input type="text" class="form-control" ng-model="username" placeholder="Enter Username"  required />
+            </div>
+        
+            <div class="form-group">
+             <label >Password  </label>
+              <input type="password" class="form-control" ng-model="password" placeholder="Enter Password" required />
+            </div>
+            
+            <button id="sub" ng-click="login()" class="btn btn-default">Submit</button><br><br>
+             <button id="register" ng-click="redirectReg()" class="btn btn-default">Register</button><br><br>
+    </form>
+    <div id="calendar"></div>
+    </body>
+    </html>
